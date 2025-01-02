@@ -26,3 +26,7 @@ SRCDIR=$(realpath $(dirname $0))
 ## Figure 2c - Clone tree with mutational signatures superimposed on nodes
 
 ## Figure 2d - Barplot of tree-constrained clone proportions 
+Rscript $SRCDIR/plt-fig2d-clone-barplot.r \
+    --in_file $PHYCLONE_CCF_TABLE \
+    --id_map $ID_MAP \
+    --out_file $SRCDIR/fig2d-clone-barplot.svg
