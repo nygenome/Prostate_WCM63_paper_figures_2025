@@ -23,7 +23,7 @@ SRCDIR=$(realpath $(dirname $0))
 ## Figure 3a - Heatmap showing JaBbA event footprints across the genome 
 Rscript $SRCDIR/plt-fig3a-event-footprint-heatmap.r \
     --in_dir $JABBA_DIR/jabba \
-    --junction_support_mtx $JABBA_DIR/junction-support/PM63.all_junctions.junction_support.bed \
+    --junction_support_mtx $JABBA_DIR/junction-support/WCM63.all_junctions.junction_support.bed \
     --tn_file $TNFILE \
     --id_map $ID_MAP \
     --chr_len $CHR_LEN \
@@ -42,7 +42,7 @@ Rscript $SRCDIR/plt-fig3b-junction-burden-violin.r \
 
 ## Figure 3c - Upset plots of histology-private junctions
 Rscript $SRCDIR/plt-fig3c-upset-histology-private-junctions.r \
-        --in_file $JABBA_DIR/junction-support/PM63.all_junctions.junction_support.bed \
+        --in_file $JABBA_DIR/junction-support/WCM63.all_junctions.junction_support.bed \
         --id_map $ID_MAP \
         --tn_file $TNFILE \
         --metadata $METADATA \
@@ -55,14 +55,14 @@ Rscript $SRCDIR/plt-fig3d-left-gtrack.r \
         --samples $tumor1,$tumor2,$tumor3 \
         --id_map $ID_MAP \
         --jabba_gg $gg \
-        --bed $JABBA_DIR/junction-support/PM63-chr5-chromothripsis-footprint-union.bed \
+        --bed $JABBA_DIR/junction-support/WCM63-chr5-chromothripsis-footprint-union.bed \
         --padding 5E5 \
-        --junc_table $JABBA_DIR/junction-support/PM63-chr5-chromothripsis-footprint-union.junction_support.bed \
+        --junc_table $JABBA_DIR/junction-support/WCM63-chr5-chromothripsis-footprint-union.junction_support.bed \
         --out_file $SRCDIR/fig3d-left-gtrack.pdf
 
 ## Right: Heatmap
 Rscript $SRCDIR/plt-fig3d-right-junction-support-heatmap.r \
-        --in_file $JABBA_DIR/junction-support/PM63-chr5-chromothripsis-footprint-union.junction_support.bed \
+        --in_file $JABBA_DIR/junction-support/WCM63-chr5-chromothripsis-footprint-union.junction_support.bed \
         --id_map $ID_MAP \
         --metadata $METADATA \
         --out_file $SRCDIR/fig3d-right-junction-support-heatmap.pdf
@@ -76,4 +76,3 @@ Rscript $SRCDIR/plt-fig3e-junction-burden-heatmap.r \
     --metadata $METADATA \
     --id_map $ID_MAP \
     --out_file $SRCDIR/fig3e-junction-burden-heatmap.pdf
-    

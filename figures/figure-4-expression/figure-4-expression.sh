@@ -27,7 +27,21 @@ SRCDIR=$(realpath $(dirname $0))
 
 ## Figure 4d - gTrack and junction read support heatmap of AR locus
 ## Left: gTrack
+Rscript $SRCDIR/plt-fig4d-left-gtrack.r \
+        --samples $tumor1,$tumor2,$tumor3 \
+        --id_map $ID_MAP \
+        --jabba_gg $gg \
+        --bed $AR_BED \
+        --padding 5E5 \
+        --junc_table $JABBA_DIR/junction-support/WCM63-AR-footprint-union.junction_support.bed \
+        --out_file $SRCDIR/fig4d-left-gtrack.pdf
 
 ## Right: Heatmap
+Rscript $SRCDIR/plt-fig4d-right-junction-support-heatmap.r \
+        --in_file $JABBA_DIR/junction-support/WCM63-AR-footprint-union.junction_support.bed \
+        --id_map $ID_MAP \
+        --metadata $METADATA \
+        --out_file $SRCDIR/fig4d-right-junction-support-heatmap.pdf
+
 
 ## Figure 4e - Gene set enrichment results 
