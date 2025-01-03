@@ -19,11 +19,11 @@
 set -euo pipefail
 SRCDIR=$(realpath $(dirname $0))
 
-## Figure 2a - Oncoprint summarizing common prostate cancer alterations 
+## Figure 2a - Oncoprint summarizing common prostate cancer alterations (see attached html)
 
-## Figure 2b - Barplot of TMB and mutational signature contributions 
+## Figure 2b - Barplot of TMB and mutational signature contributions (see attached html)
 
-## Figure 2c - Clone tree with mutational signatures superimposed on nodes
+## Figure 2c - Clone tree with mutational signatures superimposed on nodes (see attached html)
 
 ## Figure 2d - Barplot of tree-constrained clone proportions 
 Rscript $SRCDIR/plt-fig2d-clone-barplot.r \

@@ -21,6 +21,7 @@ SRCDIR=$(realpath $(dirname $0))
 
 
 ## Figure 5a - PSA levels, treatment history, and detection rate of selected clones 
+## Manually constructed in illustrator
 
 ## Figure 5c - detection rate of clones shared by >1 sample 
 Rscript $SRCDIR/plt-fig5c-tf-time-series.r \
