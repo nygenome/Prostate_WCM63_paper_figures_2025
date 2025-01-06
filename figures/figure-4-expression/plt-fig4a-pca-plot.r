@@ -23,7 +23,7 @@ library(ggfortify)
 
 
 ## Read library normalized count data
-batch_cor_pm63 <- read.csv("/gpfs/commons/projects/nepc/analysis/RNA/Results_batch_correction/NEPC_PM63_GRCh37_counts_libnorm_batch_corrected_using_RA_cohort_minus_PM0.csv",
+batch_cor_pm63 <- read.csv("Results_batch_correction/NEPC_PM63_GRCh37_counts_libnorm_batch_corrected_using_RA_cohort_minus_PM0.csv",
   header = TRUE,
   row.names = 1,
   check.names = FALSE
