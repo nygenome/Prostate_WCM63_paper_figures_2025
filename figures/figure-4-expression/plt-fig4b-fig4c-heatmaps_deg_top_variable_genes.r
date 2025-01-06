@@ -63,7 +63,7 @@ save_pheatmap_pdf <- function(x, filename, width = 13, height = 15) {
 
 
 # Read lib normalized count data
-batch_cor_pm63 <- read.csv("/gpfs/commons/projects/nepc/analysis/RNA/Results_batch_correction/NEPC_PM63_GRCh37_counts_libnorm_batch_corrected_using_RA_cohort_minus_PM0.csv",
+batch_cor_pm63 <- read.csv("Results_batch_correction/NEPC_PM63_GRCh37_counts_libnorm_batch_corrected_using_RA_cohort_minus_PM0.csv",
   header = TRUE,
   row.names = 1,
   check.names = FALSE
@@ -79,7 +79,7 @@ batch_cor_pm63_ord <- batch_cor_pm63[order(batch_cor_pm63$std, decreasing = TRUE
 
 # Load clinical information including patient ID and manuscript ID
 manu_id <- read.table(
-  file = "/gpfs/commons/projects/nepc/analysis/metadata/PM63_clinical_data_sync_NYGC.tsv", 
+  file = "PM63_clinical_data_sync_NYGC.tsv", 
   sep = '\t', 
   header = TRUE,
   check.names = FALSE
@@ -110,8 +110,7 @@ manu_ids <- unname(sample_manu_map[colnames(batch_cor_pm63)[1:12]])
 sample_type_map <- setNames(
   c("Squamous", "Squamous", "Squamous", "Squamous", "Squamous", "Squamous", 
     "Adeno", "Adeno", "Adeno", "Adeno", "Adeno", "Adeno"),
-  c("PM63_Z1", "PM63_Z6", "PM63_Z7", "PM63_Z8", "PM63_Z9", "PM63_Z11", 
-    "PM63_Z2", "PM63_Z3", "PM63_Z4", "PM63_Z5", "PM63_Z10", "PM63_Z18")
+  c("WCM63_B","WCM63_H","WCM63_I","WCM63_J","WCM63_K","WCM63_L","WCM63_A","WCM63_C","WCM63_D","WCM63_E","WCM63_F","WCM63_G")
 )
 
 # Extract the sample type based on the column names of batch_cor_pm63
