@@ -30,6 +30,9 @@ A complex phylogeny of lineage plasticity in metastatic castration resistant pro
     * GenomicRanges
     * skitools
     * BSgenome.Hsapiens.UCSC.hg38
+    * sva
+    * DESeq2
+    * pheatmap
 
 * Other utilities:
     * pyclone
