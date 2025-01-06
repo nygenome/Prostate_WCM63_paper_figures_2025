@@ -19,11 +19,15 @@
 set -euo pipefail
 SRCDIR=$(realpath $(dirname $0))
 
+
 ## Figure 4a - PCA plot of gene expression after batch correction
+Rscript $SRCDIR/plt-fig4a-pca-plot.r
+
 
 ## Figure 4b - Heatmap of differentially expressed genes 
-
 ## Figure 4c - Heatmap of most variable genes 
+Rscript $SRCDIR/plt-fig4b-fig4c-heatmaps_deg_top_variable_genes.R
+
 
 ## Figure 4d - gTrack and junction read support heatmap of AR locus
 ## Left: gTrack
@@ -45,3 +49,4 @@ Rscript $SRCDIR/plt-fig4d-right-junction-support-heatmap.r \
 
 
 ## Figure 4e - Gene set enrichment results 
+Rscript $SRCDIR/plt-fig4e-gsea-kegg-plots.r
