@@ -7,36 +7,57 @@ A complex phylogeny of lineage plasticity in metastatic castration resistant pro
 ## Dependencies
 * R 4.0.0 or greater
 * The following R packages (*NOTE*: not all of these are required for every component. Please see scripts for individual dependencies)
-    * optparse
-    * ComplexHeatmap
-    * circlize
-    * viridisLite
-    * data.table
-    * ggplot2
-    * reshape2
-    * ggpubr
-    * gGnome
-    * gUtils
-    * rtracklayer
-    * VariantAnnotation
-    * plotly
-    * deconstructSigs
+	* bamUtils
+    * Biostrings
+	* boot
+	* BSgenome.Hsapiens.UCSC.hg38
+	* circlize
+	* ComplexHeatmap
+	* data.table
+	* deconstructSigs
+	* dendextend
+	* DESeq2
+	* dplyr
+	* dryclean
+	* GenomicRanges
+	* ggbeeswarm
+	* ggfortify
+	* gGnome
+	* ggplot2
+	* ggpubr
+	* ggtree
+	* grid
+	* gTrack
+	* gUtils
     * JaBbA
-    * parallel
-    * Matrix
-    * stringr
-    * dryclean
-    * magrittr
-    * GenomicRanges
-    * skitools
-    * BSgenome.Hsapiens.UCSC.hg38
-    * sva
-    * DESeq2
-    * pheatmap
+	* lsa
+	* magrittr
+	* Matrix
+	* optparse
+	* parallel
+	* patchwork
+	* pheatmap
+	* RColorBrewer
+	* reshape2
+	* RSeqLib
+	* rtracklayer
+	* scales
+	* seriation
+	* skitools
+	* stringr
+	* sva
+	* treeio
+	* UpSetR
+	* VariantAnnotation
+	* viridisLite
+
+
 
 * Other utilities:
+    * fragCounter
     * pyclone
     * phyclone
+    * ichorCNA
 
 
  
