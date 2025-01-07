@@ -1,3 +1,4 @@
+#!/nfs/sw/R/R-4.0.0/bin/Rscript
 ################################################################################
 ### COPYRIGHT ##################################################################
 
@@ -98,6 +99,3 @@ ggplot2::ggplot(pcaNormComp, ggplot2::aes(x = PC1, y = PC2, color = histology)) 
     segment.alpha = 0.5,
     show.legend = FALSE
   )
-
-
-

@@ -1,3 +1,4 @@
+#!/nfs/sw/R/R-4.0.0/bin/Rscript
 ################################################################################
 ### COPYRIGHT ##################################################################
 
@@ -88,4 +89,3 @@ ggplot2::ggsave(filename = "plots/gsea_plot_squamous_vs_adeno_kegg.pdf",
                 width = 14, 
                 height = 8, 
                 dpi = 320)
-

@@ -19,10 +19,8 @@
 set -euo pipefail
 SRCDIR=$(realpath $(dirname $0))
 
-#Run batch correction, and DESeq2 library-size-normalization after that.
+## Run batch correction, and DESeq2 library-size-normalization after that
+Rscript $SRCDIR/batch_correction.r
 
-Rscript $SRCDIR/batch_correction.R
-
-#Run differential expression.
-
-Rscript $SRCDIR/differential_expression.R
+#Run differential expression
+Rscript $SRCDIR/differential_expression.r
