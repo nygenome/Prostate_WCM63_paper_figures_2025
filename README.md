@@ -2,7 +2,8 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 This repository contains the code necessary for reproducing the figures and custom analysis in the following manuscript:  
-A complex phylogeny of lineage plasticity in metastatic castration resistant prostate cancer 
+Nauseef, J.T., Chu, T.R., Hooper, W.F. et al. A complex phylogeny of lineage plasticity in metastatic castration resistant prostate cancer. npj Precis. Onc. 9, 91 (2025).  
+https://doi.org/10.1038/s41698-025-00854-4 
 
 ## Dependencies
 * R 4.0.0 or greater
